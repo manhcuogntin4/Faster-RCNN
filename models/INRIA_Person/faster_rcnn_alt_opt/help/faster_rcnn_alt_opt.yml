@@ -1,0 +1,5 @@
+MODELS_DIR: "/home/ubuntu/code/py-faster-rcnn/models"
+TRAIN:
+  BG_THRESH_LO: 0.0
+TEST:
+  HAS_RPN: True
