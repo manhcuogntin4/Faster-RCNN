@@ -13,6 +13,7 @@ __sets = {}
 from datasets.pascal_voc import pascal_voc
 from datasets.coco import coco
 from datasets.inria import inria
+from datasets.axa import axa
 import numpy as np
 
 # Set up voc_<year>_<split> using selective search "fast" mode
@@ -37,6 +38,11 @@ inria_devkit_path = '/home/ubuntu/code/py-faster-rcnn/data/INRIA_Person_devkit' 
 for split in ['train', 'test']:
     name = '{}_{}'.format('inria', split)
     __sets[name] = (lambda split=split: inria(split, inria_devkit_path))
+
+axa_devkit_path = '/home/ubuntu/code/py-faster-rcnn/data/INRIA_Person_devkit' # for AWS EC2
+for split in ['train', 'test']:
+    name = '{}_{}'.format('axa', split)
+    __sets[name] = (lambda split=split: axa(split, axa_devkit_path))
 
 def get_imdb(name):
     """Get an imdb (image database) by name."""
