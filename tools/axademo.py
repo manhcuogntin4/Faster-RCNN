@@ -26,7 +26,7 @@ import caffe, os, sys, cv2
 import argparse
 
 CLASSES = ('__background__', # always index 0
-           'cni', 'person', 'mrz', 'nom', 'nomEpouse', 'prenom', 'lieu')
+           'cni', 'person', 'mrz', 'nom', 'nomepouse', 'prenom', 'lieu')
 
 NETS = {'vgg16': ('VGG16',
                   'VGG16_faster_rcnn_final.caffemodel'),
