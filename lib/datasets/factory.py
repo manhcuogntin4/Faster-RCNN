@@ -39,7 +39,7 @@ for split in ['train', 'test']:
     name = '{}_{}'.format('inria', split)
     __sets[name] = (lambda split=split: inria(split, inria_devkit_path))
 
-axa_devkit_path = '/home/ubuntu/code/py-faster-rcnn/data/INRIA_Person_devkit' # for AWS EC2
+axa_devkit_path = '/home/ubuntu/code/py-faster-rcnn/data/axa_cni_dataset' # for AWS EC2
 for split in ['train', 'test']:
     name = '{}_{}'.format('axa', split)
     __sets[name] = (lambda split=split: axa(split, axa_devkit_path))

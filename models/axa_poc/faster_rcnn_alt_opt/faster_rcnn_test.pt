@@ -269,7 +269,7 @@ layer {
   bottom: "fc7"
   top: "cls_score"
   inner_product_param {
-    num_output: 7
+    num_output: 8
   }
 }
 layer {
@@ -278,7 +278,7 @@ layer {
   bottom: "fc7"
   top: "bbox_pred"
   inner_product_param {
-    num_output: 28
+    num_output: 32
   }
 }
 layer {

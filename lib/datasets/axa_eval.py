@@ -69,7 +69,7 @@ def axa_eval(detpath,
              cachedir,
              ovthresh=0.5,
              use_07_metric=False):
-    """rec, prec, ap = inria_eval(detpath,
+    """rec, prec, ap = axa_eval(detpath,
                                 annopath,
                                 imagesetfile,
                                 classname,
