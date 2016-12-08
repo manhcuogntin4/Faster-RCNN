@@ -205,7 +205,7 @@ class axa(imdb):
         annopath = os.path.join(
             self._data_path,
             'Annotations',
-            '{:s}.txt')
+            '{:s}.xml')
         imagesetfile = os.path.join(
             self._data_path,
             'ImageSets',
