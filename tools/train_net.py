@@ -91,6 +91,15 @@ if __name__ == '__main__':
 
     print('Using config:')
     pprint.pprint(cfg)
+    cfg.EXP_DIR = cfg['EXP_DIR']
+    cfg.TRAIN.HAS_RPN = cfg['TRAIN']['HAS_RPN']
+    cfg.TRAIN.IMS_PER_BATCH = cfg['TRAIN']['IMS_PER_BATCH']
+    cfg.TRAIN.BBOX_NORMALIZE_TARGETS_PRECOMPUTED = cfg['TRAIN']['BBOX_NORMALIZE_TARGETS_PRECOMPUTED']
+    cfg.TRAIN.RPN_POSITIVE_OVERLAP = cfg['TRAIN']['RPN_POSITIVE_OVERLAP']
+    cfg.TRAIN.RPN_BATCHSIZE = cfg['TRAIN']['RPN_BATCHSIZE']
+    cfg.TRAIN.PROPOSAL_METHOD = cfg['TRAIN']['PROPOSAL_METHOD']
+    cfg.TRAIN.BG_THRESH_LO = cfg['TRAIN']['BG_THRESH_LO']
+    cfg.TEST.HAS_RPN = cfg['TEST']['HAS_RPN']
 
     if not args.randomize:
         # fix the random seeds (numpy and caffe) for reproducibility
