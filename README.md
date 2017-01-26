@@ -215,3 +215,5 @@ Test outputs are saved under:
 ```
 output/<experiment directory>/<dataset name>/<network snapshot name>/
 ```
+sudo ./experiments/scripts/faster_rcnn_end2end.sh 0 VGG16 pascal_voc
+
