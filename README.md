@@ -217,3 +217,6 @@ output/<experiment directory>/<dataset name>/<network snapshot name>/
 ```
 sudo ./experiments/scripts/faster_rcnn_end2end.sh 0 VGG16 pascal_voc
 
+./tools/train_faster_rcnn_alt_opt.py --gpu 0 --net_name axa_poc --weights data/imagenet_models/VGG_CNN_M_1024.v2.caffemodel --imdb axa_train --cfg config.yml
+
+
